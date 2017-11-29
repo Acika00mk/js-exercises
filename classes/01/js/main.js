@@ -1,18 +1,23 @@
-var pocetok;
-pocetok = "29";
+//var den;
+//den="13";
+//if(den == 13){
+//    console.log("tocen uslov");
+//
+//} else {
+//    console.log("netocen uslov");
+//}
 
-var denesenDatum = 29;
 
-if (pocetok ==  denesenDatum || "Sabota" == "123"  ) {
-    console.log('Dobredojdovte ');
-} else {
-    console.log('Ne e na vreme  ');
+var iterrator = 0;
+
+while (iterrator < 10) {
+    console.log(iterrator);
+
+    iterrator ++ ;
+
+    debugger;
 }
 
+console.log("zavrsen ciklus ")
 
-
-if (pocetok !=  denesenDatum) {
-    console.log('Ne e na vreme  ');
-} else {
-    console.log('Dobredojdovte ');
-}
+console.log(iterrator);
