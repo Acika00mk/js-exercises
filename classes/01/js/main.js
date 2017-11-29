@@ -1,21 +1,35 @@
-//var den;
-//den="13";
-//if(den == 13){
-//    console.log("tocen uslov");
-//
-//} else {
-//    console.log("netocen uslov");
-//}
-var iterrator = 0;
-//
-//for (iterrator = 0; iterrator < 10 ; iterrator++ ) {
-//    console.log(iterrator);
-//    if(iterrator % 2 ){
-//        console.log('paren broj');
-//    }
-//}
+console.log("Selekcija na elementi");
+
+console.log("by tags")
+var  elementiOdTagovi;
+
+elementiOdTagovi =  document.getElementsByTagName("h1");
+
+console.log(elementiOdTagovi);
 
 
-//while (iterrator < 10){
-//    console.log(iterrator);
-//}
+console.log(document.getElementById('paragraf'));
+
+
+var byClass = document.getElementsByClassName('container');
+
+console.log(byClass);
+
+
+var i = 0;
+
+var naslovi = document.getElementsByTagName('h1');
+
+for(i = 0; i < naslovi.length ; i++ ){
+
+    var momentalenNaslov = naslovi[i].innerHTML;
+
+    var novNaslov = momentalenNaslov + i;
+
+    naslovi[i].innerHTML = novNaslov;
+
+
+    if(){
+        naslovi[i].style.backgroundColor = 'red';
+    }
+}
