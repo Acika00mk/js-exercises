@@ -1,27 +1,10 @@
-function elementSelector (element) {
-    var selectedElement =
-        document.getElementById(element);
-
-    second(selectedElement);
+function klikniMe() {
+    console.log('da');
 }
 
-function second(element){
-    console.log(element);
-}
-function zdravo (){
-    console.log("zdravo");
-}
+//$("#kopce").click(klikniMe())
 
-function cao (){
-    console.log("cao");
-}
-
-function klikniMe(){
-    console.log("falaaaaa");
-}
+$('#kopce').on("click" , klikniMe );
 
 
-function kopce(event){
-
-    console.log(event.key);
-}
+$('#kopce').on("mouseout" , klikniMe );
