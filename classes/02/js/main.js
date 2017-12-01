@@ -1,22 +1,26 @@
+var nasInterval;
+var momentalniSekundi = 0;
 
-
-
-function proveri (){
-    setTimeout(printaj, 100 );
+function startCounting() {
+    momentalniSekundi++;
+    $('#sekundi').html(momentalniSekundi)
 }
 
-function proveriInterval  (){
-    console.log('od interval');
+function start() {
+    nasInterval = setInterval(startCounting, 1000)
 }
 
-
-var nasInterval =  setInterval(proveriInterval , 100)
-
-
-
-$('#kopce').on('click', proveri);
-
-function printaj () {
+function stop() {
     clearInterval(nasInterval);
+    momentalniSekundi = 0;
+    $('#sekundi').html(momentalniSekundi)
 
 }
+
+$('#start').on('click', start);
+$('#stop').on('click', stop);
+
+
+$('#brisi').on('click', function(){
+    $('#sekundi').remove();
+})
