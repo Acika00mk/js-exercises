@@ -1,15 +1,7 @@
-
-
-
-
-function callMeMaybe(name) {
-    console.log(name)
-    for (var i = 0; i < 10; i++) {
-        console.log("da" + i);
+function printer(kolkuPati) {
+    if (parseInt(kolkuPati)) {
+        for (var i = 0; i < kolkuPati; i++) {
+            console.log(i);
+        }
     }
 }
-
-callMeMaybe()
-callMeMaybe("asdasd")
-callMeMaybe(213)
-callMeMaybe(213)
