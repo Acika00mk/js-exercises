@@ -1,10 +1,22 @@
-function klikniMe() {
-    console.log('da');
+
+
+
+function proveri (){
+    setTimeout(printaj, 100 );
 }
 
-//$("#kopce").click(klikniMe())
+function proveriInterval  (){
+    console.log('od interval');
+}
 
-$('#kopce').on("click" , klikniMe );
+
+var nasInterval =  setInterval(proveriInterval , 100)
 
 
-$('#kopce').on("mouseout" , klikniMe );
+
+$('#kopce').on('click', proveri);
+
+function printaj () {
+    clearInterval(nasInterval);
+
+}
