@@ -1,26 +1,7 @@
-var nasInterval;
-var momentalniSekundi = 0;
+$(document).ready(function(){
+    $(".pokazi").click(function(){
+        console.log(this)
+        $("#p").toggle();
+    });
 
-function startCounting() {
-    momentalniSekundi++;
-    $('#sekundi').html(momentalniSekundi)
-}
-
-function start() {
-    nasInterval = setInterval(startCounting, 1000)
-}
-
-function stop() {
-    clearInterval(nasInterval);
-    momentalniSekundi = 0;
-    $('#sekundi').html(momentalniSekundi)
-
-}
-
-$('#start').on('click', start);
-$('#stop').on('click', stop);
-
-
-$('#brisi').on('click', function(){
-    $('#sekundi').remove();
-})
+});
