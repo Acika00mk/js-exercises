@@ -22,31 +22,39 @@ $(function () {
     //    })
 })
 
-var elementStoGoVlecam;
+//var elementStoGoVlecam;
+//
+//function dragStart(event) {
+//
+//    console.log('dragggg');
+//    console.log(event.target)
+//    elementStoGoVlecam = event.target;
+//}
+//
+//function dropped(event) {
+//    event.preventDefault();
+//    console.log('dropped');
+//    $('.bazen').append($(elementStoGoVlecam))
+//
+//}
+//
+//function dragOver(event) {
+//    event.preventDefault();
+//    console.log('da');
+//}
+//
+//function enter() {
+//    $('.bazen').css('background', 'red');
+//}
+//
+//function leave() {
+//    $('.bazen').css('background', 'lightblue');
+//}
 
-function dragStart(event) {
 
-    console.log('dragggg');
-    console.log(event.target)
-    elementStoGoVlecam = event.target;
-}
-
-function dropped(event) {
-    event.preventDefault();
-    console.log('dropped');
-    $('.bazen').append($(elementStoGoVlecam))
-
-}
-
-function dragOver(event) {
-    event.preventDefault();
-    console.log('da');
-}
-
-function enter() {
-    $('.bazen').css('background', 'red');
-}
-
-function leave() {
-    $('.bazen').css('background', 'lightblue');
-}
+$(function(){
+    $('#calculate').on('click', function(){
+        var data = new Date();
+        console.log(data.getSeconds())
+    })
+})
